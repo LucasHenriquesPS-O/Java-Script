@@ -14,7 +14,28 @@ Identidade
     5 == '5' TRUE (Dois sinais de igualdade não verificam a tipologia )
     5 === 5 TRUE (Três sinais de igualdade verificam a tipologia )
     5 === '5' FALSE (Três sinais de igualdade verificam a tipologia )
+Logicos
+    ! NOT (NÃO) ( NEGAÇÃO ) !(5 > 3) FALSE
+        !TRUE = FALSE
+                        (Salario > 1500 && sexo != 'M') O salário é maior que 1500 e o sexo é diferente de masculino ?
+        !FALSE = TRUE
+    && AND (E) (CONJUNÇÃO) (Ambos verdadeiro sem não tudo e False)
+        TREUE && TRUE = TRUE
+        TRUE && FALSE = FALSE   (1 PARA 3) SO E NECESSARIO UM FALSO PARA TODOS SEREM FALSOS
+        FALSE && TRUE = FALSE   (idade >= 15 && idade<= 17) // A idade está entre 15 e 17 anos ?
+        FALSE && FALSE = FALSE
+    || OR (OU) (DISJUNÇÃO) (Apenas um verdadeiro para todos serem verdadeiros)
+        TRUE || TRUE = TRUE
+        TRUE || FALSE = TRUE   (3 PARA 1) SO E NECESSARIO UM VERDADEIRO PARA TODOS SEREM VERDADEIROS
+        FALSE || TRUE = TRUE   (Estado == 'RJ' || Estado == 'SP') // O estado é RJ ou SP ?
+        FALSE || FALSE = FALSE
+Ternário
+    (condição) ? VERDADEIRO : FALSO
+    (média >= 7) ? 'Aprovado' : 'Reprovado' // A média é maior ou igual a 7 ? Se sim, aprovado, se não, reprovado
+    média = 9 == Aprovado
+    média = 5 == Reprovado
 -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
