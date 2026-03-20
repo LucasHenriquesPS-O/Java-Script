@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style> 
-
+        body {
+            background-color: rgb(103, 103, 224);
+        }
     </style>
 </head>
 <body>
 <h1>ola mundo </h1>
-<h2>
-</h2>
+<p>Esse é o meu primeiro programa em JavaScript</p>
     <script> 
-        var nome = window.prompt('qual é o seu nome?')
-        alert('seja bem vindo ' + nome)
+        var n1 = Number.parseFloat (window.prompt ('Digite um numero qualquer'))
+        var n2 = Number.parseFloat (window.prompt ('Digite outro numero qualquer'))
+        var s = ( n1 + n2 )
+        window.alert ('A soma dos numeros que voce escolheu foi ' + s)
+        window.alert ('Os numeros que voce escolheu foram ' + n1 + ' e ' + n2)
 
     </script>
 </body>
