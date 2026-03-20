@@ -14,11 +14,14 @@
 <h1>ola mundo </h1>
 <p>Esse é o meu primeiro programa em JavaScript</p>
     <script> 
-        var n1 = Number.parseFloat (window.prompt ('Digite um numero qualquer'))
-        var n2 = Number.parseFloat (window.prompt ('Digite outro numero qualquer'))
-        var s = ( n1 + n2 )
-        window.alert ('A soma dos numeros que voce escolheu foi ' + s)
-        window.alert ('Os numeros que voce escolheu foram ' + n1 + ' e ' + n2)
+    n1 = Number(window.prompt ('Digite um numero qualquer')) // Converte a string digitada para numero
+    n2 = Number.parseFloat (window.prompt ('Digite outro numero qualquer')) // Outra forma de converter string para numero
+    s = ( n1 + n2 )
+        window.alert ('A soma dos numeros que voce escolheu foi ' + s) // Concatenacao de string
+        window.alert (`Os numeros que voce escolheu foram ${n1} e ${n2}`) // Uso de place holder
+        /* s.length | Propriedade length para contar o numero de caracteres da string
+        s.toUpperCase() | Metodo para converter a string para maiuscula
+        s.toLowerCase() | Metodo para converter a string para minuscula */
 
     </script>
 </body>
