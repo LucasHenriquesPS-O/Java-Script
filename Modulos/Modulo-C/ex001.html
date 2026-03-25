@@ -2,20 +2,32 @@
 <html lang="pt-br">
 <head>
 <!-- 
-    Primeiros passos com DOM
-    
-
+Primeiros passos com DOM
+    Por marca => getElementsByTagName()
+        inertext = so o testo sem formatação
+        innerHTML = texto com formatação
+id == #
+classic == .
 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        body{
+            background-color: #88c0ee;
+            color: #000000;
+            font: normal 18pt arial
+        }
     </style>
 </head>
 <body>
-    <h1> Iniciando estudos dom </h1>
+    <h1> Iniciando estudos DOM</h1>
+    <p> Aqui vai o Resultado</p>
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div> Clique em mim </div>
     <script>
+        var p1 = document.getElementsByTagName("p")[0];
+        document.write('este e a escrita' + p1.innerHTML);
 
     </script>
 </body>
